@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+
+#fbimg {
+    height: 70px;
+    margin: -20px;
+    width: 196px;
+}
+
+body {
+    background-color: aliceblue;
+    position: relative;
+    height: 115vh;
+    overflow-x: hidden;
+}
+
+.box img {
+    width: 150px;
+    height: 160px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#container {
+    display: flex;
+}
+
+#recentlogin {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 13vw;
+    top: 10vh;
+    margin-right: 15vw;
+    /* width:50%; */
+    /* border: 1px solid; */
+}
+
+
+
+#recentlogin>#title {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 32px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+#recentlogin>#subtitle {
+    color: #606770;
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom: 20px;
+    /* padding-bottom: 12px; */
+    font-weight: 400;
+}
+
+#card {
+    display: flex;
+}
+
+.box {
+    position: relative;
+    background-color: white;
+    /* padding-right: 22px; */
+    margin-right: 10px;
+    border-radius: 5px;
+    /* border: 2px solid red; */
+}
+
+.box:hover {
+    box-shadow: 0px 8px 8px rgb(190, 189, 190);
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+
+}
+
+#add-account {
+    color: rgb(37, 118, 232);
+}
+
+.username {
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 12px;
+    color: rgb(75, 79, 86);
+}
+
+.cancel {
+    position: absolute;
+    border: 2px solid rgb(9, 183, 203);
+    border-radius: 50%;
+    color: rgb(248, 175, 175);
+    width: 20px;
+    text-align: center;
+    background-color: rgb(63, 62, 62);
+    left: 8px;
+    top: 5px;
+    height: 20px;
+}
+
+
+.cancel:hover {
+    background-color: white;
+    opacity: 1.0;
+    color: #606770;
+    height: 24px;
+    width: 24px;
+
+}
+
+#login {
+    position: relative;
+    background-color: #FFFFFF;
+    height: 350px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    top: 16vh;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 5px 3px gainsboro;
+    right: -34px;
+}
+
+#login>a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #1877F2;
+}
+
+#login>a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+hr {
+    width: 95%;
+    height: 0.1%;
+    border: none;
+    background-color: rgb(194, 193, 193);
+}
+
+#login > input[type=email], #login>input[type=password] {
+    height: 46px;
+    margin: 8px 0;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    width: 95%;
+    border: 1.5px solid #eeeff0;
+
+}
+
+
+#login > input[type=password] {
+    margin-bottom: 20px;
+}
+
+
+#login > input[type=email]:focus,#login > input[type=password]:focus{
+outline:none;
+border: 1px solid blue;
+box-shadow: 0 0 5px #719ece;
+caret-color: blue;
+}
+
+#login-button{
+    font-size: 20px;
+    font-weight: bold;
+    height: 46px;
+    width: 95%;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #1877F2;
+
+}
+#login-button:hover{
+     background-color: #1e5daf;
+     cursor:pointer;
+}
+#creat-new-account{
+    background-color: #42b72a;
+    color: #FFFFFF;
+    font-size: 18px;
+    border-radius: 5px;
+    height: 46px;
+    font-weight: bold;
+    border: none;
+    width: 60%;
+    margin-top: 30px;
+}
+
+#creat-new-account:hover{
+    background-color: #36a420;
+    cursor: pointer;
+}
+
+p{
+    font-size: 15px;
+    position:absolute;
+    bottom: -40px;
+}
+
+footer {
+    bottom: 0;
+    margin-top: 113px;
+    display: flex;
+    justify-content: center;
+    word-spacing: 12px;
+    /* list-style: 20px; */
+    font-size: 12px;
+    padding: 20px;
+    width: 100vw;
+    position: absolute;
+    color: #a6a8aa;
+    background-color: white;   
+}
+
+@media screen and(max-width:1114px) {
+    #recent-login{
+        left: 70px;
+        margin-right: 22vw;
+    }
+    #login{
+        right: 30px;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    body{
+        height: 150vh;
+    }
+    #container{
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+    }
+    #recentlogin{
+        margin-right: 0;
+        align-items: center;
+        left: 0;
+        top: 20px;
+        position: relative;
+    }
+    #card-1{
+        margin-right: 5px;
+    }
+    #card-2 #card-3{
+        margin-right: 0;
+        margin-left: 5px;
+    }
+    #login{
+        text-align: center;
+        left: 0;
+        margin-right: 0;
+        margin-top: -30px;
+        top:80px;
+        position: relative;
+    }
+    footer{
+        position: absolute;
+        padding: 20px;
+        width: 100vw;
+    }
+}
+
+@media screen and (max-height:670px) {
+    footer{
+        position: relative;
+        top: 180px;
+    }
+}
